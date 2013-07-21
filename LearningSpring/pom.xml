@@ -53,6 +53,7 @@
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-asm</artifactId>
   		<version>3.1.4.RELEASE</version>
+  		<scope>runtime</scope>
   	</dependency>
   </dependencies>
 </project>

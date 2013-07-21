@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.apress.prospring3.ch4.annotation" />
+
+	<util:map id="map" map-class="java.util.HashMap">
+		<entry key="someValue">
+			<value>Hello world!</value>
+		</entry>
+		<entry key="someBean">
+			<ref local="oracle"/>
+		</entry>
+	</util:map>	
+	
+	<util:properties id="props">
+		<prop key="firstName">Clarance</prop>
+		<prop key="secondName">Ho</prop>
+	</util:properties>
+	
+	<util:set id="set">
+		<value>Hello world</value>
+		<ref local="oracle"/>
+	</util:set>
+	
+	<util:list id="list">
+		<value>Hello world</value>
+		<ref local="oracle"/>
+	</util:list>
+</beans>
