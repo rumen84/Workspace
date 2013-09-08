@@ -60,5 +60,15 @@
   		<artifactId>spring-tx</artifactId>
   		<version>3.2.3.RELEASE</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.aspectj</groupId>
+  		<artifactId>aspectjrt</artifactId>
+  		<version>1.7.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.aspectj</groupId>
+  		<artifactId>aspectjweaver</artifactId>
+  		<version>1.7.3</version>
+  	</dependency>
   </dependencies>
 </project>
